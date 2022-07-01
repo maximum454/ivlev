@@ -1,0 +1,23 @@
+.nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__link{
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 29px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		text-decoration: none;
+		transition: all .3s ease;
+		&:hover{
+			opacity: .7;
+		}
+	}
+	&__dif{
+		width: 2px;
+		height: 54px;
+		background-color: #fff;
+	}
+}

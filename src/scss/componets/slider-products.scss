@@ -1,0 +1,20 @@
+.slider-products{
+	overflow: hidden;
+	margin: 80px 0;
+	&__header{
+		margin-bottom: 65px;
+		margin-left: 90px;
+	}
+	&__title{
+		font-weight: 400;
+		font-size: 64px;
+		line-height: 64px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		margin: 0;
+	}
+	&__item{
+		max-width: 335px;
+	}
+}

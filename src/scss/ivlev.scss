@@ -10,9 +10,9 @@
 body {
 	background-color: #fff;
 	background-image: url("../img/bg.png");
-	background-size: cover;
 	background-position: top;
-	background-repeat: repeat;
+	background-repeat: repeat-y;
+	background-size: 100%;
 	&.lock {
 		overflow: hidden;
 	}
@@ -75,6 +75,10 @@ p {
 
 
 @import "componets/header";
+@import "componets/nav";
+@import "componets/card-block";
+@import "componets/product-card";
+@import "componets/slider-products";
 
 
 
