@@ -1,0 +1,57 @@
+
+
+@font-face {
+	font-family: 'Corbel';
+	src: url('../fonts/Corbel/Corbel-Bold.eot');
+	src: local('../fonts/Corbel/Corbel Bold'), local('../fonts/Corbel/Corbel-Bold'),
+	url('../fonts/Corbel/Corbel-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Corbel/Corbel-Bold.woff2') format('woff2'),
+	url('../fonts/Corbel/Corbel-Bold.woff') format('woff'),
+	url('../fonts/Corbel/Corbel-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Corbel';
+	src: url('../fonts/Corbel/Corbel-Italic.eot');
+	src: local('../fonts/Corbel/Corbel Italic'), local('../fonts/Corbel/Corbel-Italic'),
+	url('../fonts/Corbel/Corbel-Italic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Corbel/Corbel-Italic.woff2') format('woff2'),
+	url('../fonts/Corbel/Corbel-Italic.woff') format('woff'),
+	url('../fonts/Corbel/Corbel-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Corbel';
+	src: url('../fonts/Corbel/Corbel-BoldItalic.eot');
+	src: local('../fonts/Corbel/Corbel Bold Italic'), local('../fonts/Corbel/Corbel-BoldItalic'),
+	url('../fonts/Corbel/Corbel-BoldItalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Corbel/Corbel-BoldItalic.woff2') format('woff2'),
+	url('../fonts/Corbel/Corbel-BoldItalic.woff') format('woff'),
+	url('../fonts/Corbel/Corbel-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Corbel';
+	src: url('../fonts/Corbel/Corbel.eot');
+	src: local('../fonts/Corbel/Corbel'),
+	url('../fonts/Corbel/Corbel.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Corbel/Corbel.woff2') format('woff2'),
+	url('../fonts/Corbel/Corbel.woff') format('woff'),
+	url('../fonts/Corbel/Corbel.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+
+$font1: 'Corbel', sans-serif;

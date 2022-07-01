@@ -1,0 +1,80 @@
+@import "mixin";
+@import "fonts";
+@import "./partials/normalize";
+@import "./partials/swiper-bundle";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	background-image: url("../img/bg.png");
+	background-size: cover;
+	background-position: top;
+	background-repeat: repeat;
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+
+.wrp {
+	position: relative;
+
+	font-family: $font1;
+}
+
+
+.container {
+	max-width: 1244px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+p {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+}
+
+.d-none {
+	display: none !important;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.d-block {
+	display: block;
+}
+
+.d-desktop-none {
+	display: none;
+	@include r(767) {
+		display: block;
+	}
+}
+
+.d-mobile-none {
+	display: block;
+	@include r(767) {
+		display: none !important;
+	}
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+@import "componets/header";
+
+
+
