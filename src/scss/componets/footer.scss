@@ -18,7 +18,7 @@
 		justify-content: space-between;
 	}
 	&__title{
-		font-family: 'Montserrat';
+		font-family: $font2;
 		font-style: normal;
 		font-weight: 900;
 		font-size: 20px;
@@ -29,7 +29,7 @@
 		margin: 0 0 38px;
 	}
 	&__link{
-		font-family: 'Montserrat';
+		font-family: $font2;
 		display: block;
 		text-decoration: none;
 		font-weight: 700;
@@ -40,5 +40,8 @@
 		color: #FFFFFF;
 		margin: 0 0 38px;
 	}
-
+	&__social{
+		display: flex;
+		gap: 57px;
+	}
 }
