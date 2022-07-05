@@ -1,15 +1,17 @@
 .btn{
 	display: inline-block;
-	font-weight: 400;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: middle;
 	user-select: none;
-	border: 1px solid transparent;
-	padding: .563rem 1.4rem;
-	font-size: 15px;
-	line-height: 20px;
-	border-radius: 25px;
+	border: 2px solid transparent;
+	padding: .907rem 2.4rem;
+	border-radius: 0;
 	cursor: pointer;
 	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	text-decoration: none;
@@ -23,12 +25,10 @@
 	}
 	&.btn-primary{
 		color: #fff;
-		background: linear-gradient(45deg, #f15200 33%, #f58400);
-		border-color: #fd7400;
+		border-color: #ffffff;
 		&:hover {
 			color: #fff;
-			background-color: #d76200;
-			border-color: #ca5d00;
+			background-color: #000;
 		}
 	}
 	&.btn-secondary{
