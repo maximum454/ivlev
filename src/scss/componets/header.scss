@@ -106,4 +106,12 @@
       overflow: visible;
     }
   }
+  @include r(991){
+    &__logo{
+      padding-top: 0;
+    }
+    &__middle{
+      margin-top: -120px;
+    }
+  }
 }
