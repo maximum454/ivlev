@@ -121,9 +121,49 @@
     }
   }
   @include r(424){
+    margin-bottom: 38px;
+    &__body{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__logo{
+      margin: 0 -20px;
+    }
+    &__search{
+      margin-top: -11px;
+    }
     &__middle{
       max-width: 250px;
-      margin: 0 auto;
+      margin: -26px auto 38px;
+    }
+    &__burger{
+      width: 39px;
+      height: 30px;
+      margin-right: 39px;
+      &.active{
+        span{
+          &:nth-child(1){
+            top: 14px;
+          }
+          &:nth-child(3){
+            top: 14px;
+          }
+        }
+      }
+    }
+    &__btn{
+      .btn{
+        font-size: 15px;
+        line-height: 18px;
+        padding: 17px 20px;
+      }
+    }
+    &__dropdown-menu{
+      width: 100%;
+      &.active{
+        margin-bottom: 38px;
+      }
     }
   }
 }

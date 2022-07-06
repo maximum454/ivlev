@@ -1,0 +1,32 @@
+.pagination{
+	text-align: center;
+	&__link,
+	span{
+		font-family: $font2;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 30px;
+		letter-spacing: 0.05em;
+		text-transform: lowercase;
+		color: #000000;
+		text-decoration: none;
+		padding: 0 5px;
+		&.active{
+			font-weight: 700;
+			font-size: 36px;
+			line-height: 44px;
+		}
+	}
+	&__more{
+		font-family: $font1;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.05em;
+		text-decoration-line: underline;
+		text-transform: lowercase;
+		color: #000000;
+		margin-left: 28px;
+	}
+}

@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 26px;
+	margin: 0 auto 26px;
 	position: relative;
 	z-index: 1;
 	&__link{
@@ -43,5 +43,11 @@
 			display: block;
 			margin-bottom: 20px;
 		}
+	}
+	@include r(424){
+		width: 100%;
+		max-width: 250px;
+		order: 2;
+		margin-bottom: 0;
 	}
 }
