@@ -1,9 +1,9 @@
 .card-block{
-	margin: 0 0 80px;
+	margin: 0 0 82px;
 	&__body{
 		display: flex;
 		flex-direction: column;
-		gap:80px;
+		gap:81px;
 		&--row{
 			flex-direction: row;
 			gap: 20px;
@@ -11,6 +11,7 @@
 			.card-block__item{
 				flex-direction: column;
 				margin: 0;
+				flex: 1 0;
 				&:nth-child(even){
 					flex-direction: column-reverse;
 				}
@@ -22,8 +23,15 @@
 				max-width: 100%;
 			}
 			.card-block__content{
-				margin: 60px auto;
+				margin: 21px auto 59px;
 				flex: 1 0 auto;
+				max-width: 398px;
+			}
+			.card-block__name{
+				margin: 0 0 64px;
+			}
+			.card-block__dif{
+				margin-bottom: 75px;
 			}
 		}
 	}
@@ -52,8 +60,9 @@
 	}
 	&__content{
 		flex: 1 0 50%;
-		max-width: 402px;
+		max-width: 380px;
 		margin: 0 auto;
+		padding-top: 24px;
 	}
 	&__dif{
 		width: 140px;
@@ -62,13 +71,14 @@
 		margin-bottom: 61px;
 	}
 	&__name{
+		font-family: $font3;
 		font-weight: 400;
 		font-size: 64px;
 		line-height: 77px;
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
 		color: #000000;
-		margin: 0 0 49px;
+		margin: 0 0 41px;
 	}
 	&__text{
 		font-family: $font1;
@@ -77,5 +87,6 @@
 		line-height: 17px;
 		letter-spacing: 0.05em;
 		color: #000000;
+		margin: 0;
 	}
 }

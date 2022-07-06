@@ -1,8 +1,12 @@
 .header{
-  margin-bottom: 100px;
+  margin-bottom: 74px;
   &__logo{
+    padding-top: 64px;
     text-align: center;
     position: relative;
+    background-image: url("../img/moh-header.png");
+    background-repeat: no-repeat;
+    background-position: top center;
     &:before{
       content: '';
       position: absolute;
@@ -10,10 +14,7 @@
       left: 0;
       right: 0;
       margin: 0 auto;
-      background-image: url("../img/moh-header.png");
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: top center;
+
       width: 800px;
       height: 342px;
       z-index: -1;
@@ -25,19 +26,52 @@
     margin-bottom: 47px;
     display: flex;
     flex-wrap: wrap;
+    margin-top: -172px;
+    position: relative;
+    z-index: 1;
   }
   &__burger{
     width: 47px;
-    height: 40px;
+    height: 35px;
     margin-right: 46px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
+    transition: all .3s ease;
+    position: relative;
+    overflow: hidden;
+    &.active{
+      transition:all .3s ease;
+      span{
+        background-color: #000000;
+        transition:all .3s ease;
+        &:nth-child(1){
+          position: absolute;
+          top: 16px;
+          left: 0;
+          transform: rotate(-45deg);
+        }
+        &:nth-child(3){
+          position: absolute;
+          top: 16px;
+          left: 0;
+          transform: rotate(45deg);
+        }
+        &:nth-child(2){
+          opacity: 0;
+          top: 16px;
+          left: -100%;
+          position: absolute;
+        }
+      }
+    }
     span{
       display: block;
       width: 100%;
       height: 3px;
       background-color: #fff;
+      transition:all .3s ease;
     }
   }
   &__search{
@@ -55,5 +89,21 @@
   }
   &__btn{
     margin-left: auto;
+  }
+  &__dropdown-menu{
+    display: none;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: height .3s ease;
+    overflow: hidden;
+    &.active{
+      display: block;
+      height: auto;
+      visibility: visible;
+      opacity: 1;
+      transition: all .3s ease;
+      overflow: visible;
+    }
   }
 }

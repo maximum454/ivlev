@@ -83,7 +83,19 @@
 	font-display: swap;
 }
 
+@font-face {
+	font-family: 'BebasNeue';
+	src: local('../fonts/BebasNeue/Montserrat-Regular'),
+	url('../fonts/BebasNeue/Montserrat-Regular.woff2') format('woff2'),
+	url('../fonts/BebasNeue/Montserrat-Regular.woff') format('woff'),
+	url('../fonts/BebasNeue/Bebas-Neue-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
 
 
 $font1: 'Corbel', sans-serif;
 $font2: 'Montserrat', sans-serif;
+$font3: 'BebasNeue', sans-serif;
