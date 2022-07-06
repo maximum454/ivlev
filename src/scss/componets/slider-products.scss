@@ -24,4 +24,10 @@
 			line-height: 54px;
 		}
 	}
+	@include r(767){
+		margin: 45px 0 40px;
+		&__header{
+			display: none;
+		}
+	}
 }

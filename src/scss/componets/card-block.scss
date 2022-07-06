@@ -147,4 +147,31 @@
 		}
 
 	}
+	@include r(767){
+		&__body{
+			gap:45px;
+			&--row{
+				gap: 45px;
+				margin-bottom: 45px;
+				.card-block__name{
+					margin: 0 0 36px;
+				}
+				.card-block__dif{
+					margin-bottom: 42px;
+				}
+			}
+		}
+		&__item{
+			padding: 17px;
+			gap: 43px;
+		}
+		&__name{
+			font-size: 40px;
+			line-height: 40px;
+			margin: 0 0 36px;
+		}
+		&__dif{
+			margin-bottom: 42px;
+		}
+	}
 }

@@ -22,6 +22,7 @@
 		font-family: $font1;
 	}
 	&__name{
+		font-family: $font1;
 		font-weight: 400;
 		font-size: 24px;
 		line-height: 29px;
@@ -42,5 +43,32 @@
 		letter-spacing: 0.05em;
 		text-transform: lowercase;
 		color: #FFFFFF;
+	}
+	@include r(767){
+		&--article{
+			.product-card__content{
+				position: absolute;
+				top: 0;
+				left: 0;
+				padding: 12px;
+			}
+			.product-card__dif{
+				margin: 46px 0 40px;
+			}
+		}
+		&__content{
+			padding: 24px 0 0;
+		}
+		&__name{
+			font-size: 16px;
+			line-height: 19px;
+		}
+		&__dif{
+			margin: 16px 0;
+		}
+		&__price{
+			font-size: 16px;
+			line-height: 19px;
+		}
 	}
 }
