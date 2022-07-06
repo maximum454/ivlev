@@ -16,6 +16,7 @@
 	&__body{
 		display: flex;
 		justify-content: space-between;
+		gap: 20px;
 	}
 	&__title{
 		font-family: $font2;
@@ -43,5 +44,24 @@
 	&__social{
 		display: flex;
 		gap: 57px;
+	}
+	@include r(1023){
+
+		&__title{
+			font-size: 18px;
+			line-height: 22px;
+			margin: 0 0 20px;
+		}
+		&__link{
+			font-size: 18px;
+			line-height: 22px;
+			margin: 0 0 20px;
+		}
+		&__social{
+			gap: 37px;
+		}
+		&__icon{
+			width: 30px;
+		}
 	}
 }

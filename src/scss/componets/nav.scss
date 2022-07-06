@@ -3,6 +3,8 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 26px;
+	position: relative;
+	z-index: 1;
 	&__link{
 		font-weight: 700;
 		font-size: 24px;
@@ -20,5 +22,14 @@
 		width: 2px;
 		height: 54px;
 		background-color: #fff;
+	}
+	@include r(1023){
+		&__link{
+			font-size: 18px;
+			line-height: 24px;
+		}
+		&__dif{
+			height: 30px;
+		}
 	}
 }
