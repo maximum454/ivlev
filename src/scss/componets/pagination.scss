@@ -17,6 +17,9 @@
 			font-size: 36px;
 			line-height: 44px;
 		}
+		&:not(span):hover{
+			font-size: 36px;
+		}
 	}
 	&__more{
 		font-family: $font1;
@@ -28,5 +31,8 @@
 		text-transform: lowercase;
 		color: #000000;
 		margin-left: 28px;
+		&:hover{
+			text-decoration: none;
+		}
 	}
 }
