@@ -1,4 +1,6 @@
 @@include('./partials/swiper-bundle.min.js')
+@@include('./partials/remodal.js')
+@@include('./partials/jquery.mask.js')
 
 const swiperProducts = new Swiper('.swiper-products', {
     slidesPerView: 4,
@@ -26,4 +28,8 @@ burger.addEventListener('click', function (e){
     let menu = document.getElementsByClassName('header__dropdown-menu');
     menu[0].classList.toggle('active');
     target.classList.toggle('active')
+})
+
+$(function (){
+    $('.js-phone-mask').mask('+7 (000) 000-00-00');
 })

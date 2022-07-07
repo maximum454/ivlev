@@ -1,9 +1,13 @@
+@import "./partials/normalize";
+@import "./partials/swiper-bundle";
+@import "./partials/remodal";
+@import "./partials/remodal-default-theme";
 @import "mixin";
 @import "fonts";
 @import "buttons";
 @import "form";
-@import "./partials/normalize";
-@import "./partials/swiper-bundle";
+@import "remodal";
+
 
 * {
 	box-sizing: border-box;
