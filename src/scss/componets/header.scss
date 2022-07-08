@@ -1,13 +1,13 @@
 .header{
   margin-bottom: 74px;
   &__logo{
-    padding-top: 64px;
+    padding-top: 8px;
     text-align: center;
     position: relative;
     background-image: url("../img/moh-header.png");
-    background-size: 100%;
+    background-size: 72%;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center -72px;
     display: block;
     text-decoration: none;
     img{
@@ -17,7 +17,7 @@
     margin-bottom: 47px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: -172px;
+    margin-top: -145px;
     position: relative;
     z-index: 1;
   }
