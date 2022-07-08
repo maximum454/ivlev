@@ -95,6 +95,9 @@
 			text-decoration: none;
 		}
 	}
+	&__anons{
+
+	}
 	@include r(767){
 		&__item{
 			display: block;
