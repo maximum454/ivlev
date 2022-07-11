@@ -1432,6 +1432,19 @@ burger.addEventListener('click', function (e){
     target.classList.toggle('active')
 })
 
+var swiperSliderDetailThumb = new Swiper(".swiper-slider-detail-thumb", {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+var swiperSliderDetail = new Swiper(".swiper-slider-detail", {
+    spaceBetween: 10,
+    thumbs: {
+        swiper: swiperSliderDetailThumb,
+    },
+});
+
 $(function (){
     $('.js-phone-mask').mask('+7 (000) 000-00-00');
 

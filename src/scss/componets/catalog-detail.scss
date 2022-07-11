@@ -1,29 +1,34 @@
 .catalog-detail{
 	&__body{
 		display: flex;
-		justify-content: space-between;
 		gap: 20px;
-		padding-bottom: 62px;
-		margin-bottom: 62px;
+		margin-bottom: 104px;
 		text-decoration: none;
 		&:last-child{
 			border: 0;
 			padding: 0;
 		}
 	}
-	&__figure{
+	&__slider{
 		flex: 1 0;
 		max-width: 372px;
 		margin: 0;
+		overflow: hidden;
 		img{
 			display: block;
 			object-fit: cover;
 		}
+
+	}
+	&__slider-main{
+		margin-bottom: 26px;
 	}
 	&__content{
 		flex: 1 0;
 		max-width: 494px;
-		margin: 0 auto;
+		margin: 0 auto 0 121px;
+		padding-bottom: 100px;
+		position: relative;
 	}
 	&__name{
 		font-family: $font2;
@@ -48,7 +53,7 @@
 		letter-spacing: 0.05em;
 		text-transform: lowercase;
 		color: #000000;
-		margin: 0 0 19px;
+		margin: 0 0 78px;
 		&.hide{
 			display: none;
 		}
@@ -67,11 +72,41 @@
 			text-decoration: none;
 		}
 	}
+	&__next{
+		position: absolute;
+		bottom: 40px;
+		display: block;
+		text-decoration: none;
+		font-family: $font2;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 25px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #000000;
+		&:after{
+			content: '';
+			position: relative;
+			top: 7px;
+			display: inline-block;
+			background-image: url("../img/icons-sprite.svg#arrow-next");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center;
+			margin-left: 40px;
+			width: 33px;
+			height: 25px;
+		}
+	}
 	&__marketplace{
 		flex: 1 0 100%;
 		display: flex;
+		flex-wrap: wrap;
 		gap: 58px;
-
+		.btn{
+			flex: 1 0 356px;
+			max-width: 356px;
+		}
 	}
 	.btn{
 		font-size: 18px;

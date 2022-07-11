@@ -3324,12 +3324,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   gap: 20px;
-  padding-bottom: 62px;
-  margin-bottom: 62px;
+  margin-bottom: 104px;
   text-decoration: none;
 }
 
@@ -3338,18 +3334,23 @@ a {
   padding: 0;
 }
 
-.catalog-detail__figure {
+.catalog-detail__slider {
   -webkit-box-flex: 1;
       -ms-flex: 1 0;
           flex: 1 0;
   max-width: 372px;
   margin: 0;
+  overflow: hidden;
 }
 
-.catalog-detail__figure img {
+.catalog-detail__slider img {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.catalog-detail__slider-main {
+  margin-bottom: 26px;
 }
 
 .catalog-detail__content {
@@ -3357,7 +3358,9 @@ a {
       -ms-flex: 1 0;
           flex: 1 0;
   max-width: 494px;
-  margin: 0 auto;
+  margin: 0 auto 0 121px;
+  padding-bottom: 100px;
+  position: relative;
 }
 
 .catalog-detail__name {
@@ -3385,7 +3388,7 @@ a {
   letter-spacing: 0.05em;
   text-transform: lowercase;
   color: #000000;
-  margin: 0 0 19px;
+  margin: 0 0 78px;
 }
 
 .catalog-detail__text.hide {
@@ -3409,6 +3412,34 @@ a {
   text-decoration: none;
 }
 
+.catalog-detail__next {
+  position: absolute;
+  bottom: 40px;
+  display: block;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-detail__next:after {
+  content: '';
+  position: relative;
+  top: 7px;
+  display: inline-block;
+  background-image: url("../img/icons-sprite.svg#arrow-next");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  margin-left: 40px;
+  width: 33px;
+  height: 25px;
+}
+
 .catalog-detail__marketplace {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
@@ -3416,7 +3447,16 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 58px;
+}
+
+.catalog-detail__marketplace .btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 356px;
+          flex: 1 0 356px;
+  max-width: 356px;
 }
 
 .catalog-detail .btn {
