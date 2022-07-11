@@ -4,6 +4,9 @@
 Главная
 https://maximum454.github.io/ivlev/build/
 
+Каталог детальная
+https://maximum454.github.io/ivlev/build/catalog-detail.html
+
 Рецепты
 https://maximum454.github.io/ivlev/build/recipes.html
 
