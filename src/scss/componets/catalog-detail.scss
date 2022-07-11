@@ -23,6 +23,12 @@
 	&__slider-main{
 		margin-bottom: 26px;
 	}
+	&__slider-thumb{
+		overflow: hidden;
+		.catalog-detail__name{
+			display: none;
+		}
+	}
 	&__content{
 		flex: 1 0;
 		max-width: 494px;
@@ -104,53 +110,98 @@
 		flex-wrap: wrap;
 		gap: 58px;
 		.btn{
-			flex: 1 0 356px;
-			max-width: 356px;
+			flex: 1 0 calc(33% - 60px);
+			font-size: 18px;
+			line-height: 22px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 10px;
+			padding: 12px;
+			img{
+				vertical-align: middle;
+			}
+			&:hover{
+				background-color: transparent;
+				color: #000;
+			}
 		}
 	}
-	.btn{
-		font-size: 18px;
-		line-height: 22px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 10px;
-		width: 100%;
-		img{
-			vertical-align: middle;
-		}
-		&:hover{
-			background-color: transparent;
-			color: #000;
+	@include r(1023){
+		&__marketplace{
+			gap: 30px;
+			.btn{
+				flex-direction: column;
+			}
 		}
 	}
 	@include r(767){
 		&__body{
 			display: block;
-			padding-bottom: 42px;
 			margin-bottom: 35px;
 		}
-		&__figure{
+		&__slider{
 			flex: 1 0 100%;
 			max-width: 100%;
-			margin: 0 0 36px;
-			img{
-				width: 100%;
+			display: flex;
+		}
+		&__slider-main{
+			flex: 1 0 45%;
+			overflow: hidden;
+			margin-bottom: 26px;
+		}
+		&__slider-thumb{
+			flex: 1 0 50%;
+			margin-left: 5%;
+			.catalog-detail__name{
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 30px;
+				display: block;
 			}
 		}
 		&__content{
 			flex: 1 0 100%;
 			max-width: 100%;
 			margin: 0 auto;
+			padding-bottom: 80px;
+		}
+		&__dif{
+			margin: 40px 0;
 		}
 		&__name{
+			font-size: 16px;
+			line-height: 30px;
 			display: none;
-		}
-		&__ingredients{
 		}
 		&__text{
 			&.hide{
 				display: block;
+			}
+		}
+		&__link{
+			display: block;
+			text-align: center;
+			font-size: 14px;
+			line-height: 17px;
+		}
+		&__next{
+			display: block;
+			width: fit-content;
+			bottom: 20px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			&:after{
+				display: none;
+			}
+		}
+		&__marketplace{
+			gap: 45px;
+
+			.btn{
+				flex: 1 0 100%;
+				flex-direction: row;
 			}
 		}
 	}
