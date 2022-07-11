@@ -1,0 +1,22 @@
+.page-404{
+	text-align: center;
+
+	&__text{
+		font-family: $font2;
+		font-style: normal;
+		font-size: 36px;
+		line-height: 44px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+	.nav{
+		justify-content: space-evenly;
+	}
+	@include r(767){
+		&__text{
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+}

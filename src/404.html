@@ -4,7 +4,7 @@
 <head>
 
     @@include('./template/_meta.html',{
-    "title": "Ivlev - Рецепты",
+    "title": "Ivlev - 404",
     "description": "Интернет магазин",
     })
     <!-- CSS -->
@@ -16,100 +16,29 @@
     <div class="decor1"></div>
     <div class="decor2"></div>
     <div class="decor3"></div>
-    @@include('./template/_header.html',{ })
-    <main class="main main--page">
+    @@include('./template/_header.html',{"nav": "N"})
+    <main class="main">
         <div class="container">
-        <h1 class="main__h1">рецепты</h1>
+            <div class="page-404">
+                <figure class="page-404__figure">
+                    <img class="img-fluid" src="./img/icons-sprite.svg#404" width="164" height="111" alt="">
+                </figure>
+                <p class="page-404__text"><b>страница не найдена</b></p>
+                <p class="page-404__text">Но есть много других полезных страниц</p>
 
-            <div class="recipes">
-                <div class="recipes__body">
-                    <div class="recipes__item">
-                        <div class="recipes__name-mobile">Тальята с салатным миксом и пармезаном</div>
-                        <figure class="recipes__figure">
-                            <img class="img-fluid" src="./img/recipes-photo.png" width="572" height="" alt="Тальята с салатным миксом и пармезаном">
-                        </figure>
-                        <div class="recipes__content">
-                            <div class="recipes__name">Тальята с салатным миксом и пармезаном</div>
-                            <ul class="recipes__list">
-                                <li><b>калорий:</b> 887</li>
-                                <li><b>Белки:</b> 8г</li>
-                                <li><b>жиры:</b> 26г</li>
-                                <li><b>углеводы:</b> 7г</li>
-                            </ul>
-                            <div class="recipes__ingredients">ингридиенты:</div>
-                            <p class="recipes__text">
-                                говядина — 200 г стебель сельдерея морковь салат радиккьо салат латук салат оклиф — 10 г мангольд масло оливковое черный перец — по вкусу соль — по вкусу помидоры черри — 30 г кресс-салат мини-перец — 2 шт. розмарин лимон — 1 шт. вино красное — 220 мл мёд — 1 г сахар — 10 г Рустам Тангиров Добавить автора в избранное «Тальята из говядины» Выпуск «Красивая подача» Программа Количество ингредиентов18 ингредиентов Время приготовления 20 минут
-                            </p>
-                            <a href="./recipes-detail.html" class="recipes__link">смотреть пошаговый рецепт >></a>
-                        </div>
-                    </div>
-                    <div class="recipes__item">
-                        <div class="recipes__name-mobile">Тушеная баранина с овощами</div>
-                        <figure class="recipes__figure">
-                            <img class="img-fluid" src="./img/recipes-photo.png" width="572" height="" alt="Тальята с салатным миксом и пармезаном">
-                        </figure>
-                        <div class="recipes__content">
-                            <div class="recipes__name">Тушеная баранина с овощами</div>
-                            <ul class="recipes__list">
-                                <li><b>калорий:</b> 887</li>
-                                <li><b>Белки:</b> 8г</li>
-                                <li><b>жиры:</b> 26г</li>
-                                <li><b>углеводы:</b> 7г</li>
-                            </ul>
-                            <div class="recipes__ingredients">ингридиенты:</div>
-                            <p class="recipes__text">
-                                600 г баранины;
-                                225 г лука;
-                                1000 г кабачка;
-                                200 г стручковой фасоли;
-                                150 г морковки;
-                                400 г сочных помидоров;
-                                400 г картошки;
-                                290 г сладкого перца;
-                                32 г чеснока;
-                                20 г свежего базилика;
-                                20 г кинзы;
-                                1 ч. л. зиры;
-                                1 ч. л. молотого кориандра;
-                                специи;
-                                на вкус соль и чёрный перец.
-                                Общее время готовки – 3 часа
-                            </p>
-                            <a href="./recipes-detail.html" class="recipes__link">смотреть пошаговый рецепт >></a>
-                        </div>
-                    </div>
-                    <div class="recipes__item">
-                        <div class="recipes__name-mobile">Момо (тибетские пельмени)</div>
-                        <figure class="recipes__figure">
-                            <img class="img-fluid" src="./img/recipes-photo.png" width="572" height="" alt="Момо (тибетские пельмени)">
-                        </figure>
-                        <div class="recipes__content">
-                            <div class="recipes__name">Момо (тибетские пельмени)</div>
-                            <ul class="recipes__list">
-                                <li><b>калорий:</b> 887</li>
-                                <li><b>Белки:</b> 8г</li>
-                                <li><b>жиры:</b> 26г</li>
-                                <li><b>углеводы:</b> 7г</li>
-                            </ul>
-                            <div class="recipes__ingredients">ингридиенты:</div>
-                            <p class="recipes__text">
-                                Ингредиенты: Мука  — 2 Стакана Вода  — 0,5 Стакана Фарш мясной  — 500 Грамм Лук  — 1-2 Штук Чеснок  — 2 Зубчика Имбирь  — 0,5 Чайных ложки (молотый) Соевый соус  — 2 Ст. ложки Соль  — По вкусу Зелень  — По вкусу Количество порций: 6-8
-                            </p>
-                            <a href="./recipes-detail.html" class="recipes__link">смотреть пошаговый рецепт >></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="recipes__pagination pagination">
-                    <a class="pagination__link active" href="">1</a>
-                    <a class="pagination__link" href="">2</a>
-                    <a class="pagination__link" href="">3</a>
-                    <span class="pagination__dot">...</span>
-                    <a class="pagination__more" href="">больше рецептов</a>
-                </div>
+                <nav class="nav">
+                    <a class="nav__link" href="./catalog.html">На главную</a>
+                    <div class="nav__dif"></div>
+                    <a class="nav__link" href="">Каталог</a>
+                    <div class="nav__dif"></div>
+                    <a class="nav__link" href="">Ивлев</a>
+                    <div class="nav__dif"></div>
+                    <a class="nav__link" href="">где купить</a>
+                </nav>
             </div>
+
         </div>
     </main>
-    @@include('./template/_footer.html',{ })
     @@include('./template/_modal.html',{ })
 </div>
 

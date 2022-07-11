@@ -3484,6 +3484,26 @@ a {
   color: #000;
 }
 
+.page-404 {
+  text-align: center;
+}
+
+.page-404__text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.page-404 .nav {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 @media only screen and (min-width: 641px) {
   .remodal {
     max-width: 700px;
@@ -3916,6 +3936,11 @@ a {
 
   .catalog-detail__text.hide {
     display: block;
+  }
+
+  .page-404__text {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
