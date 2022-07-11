@@ -1,0 +1,122 @@
+.catalog-detail{
+	&__body{
+		display: flex;
+		justify-content: space-between;
+		gap: 20px;
+		padding-bottom: 62px;
+		margin-bottom: 62px;
+		text-decoration: none;
+		&:last-child{
+			border: 0;
+			padding: 0;
+		}
+	}
+	&__figure{
+		flex: 1 0;
+		max-width: 372px;
+		margin: 0;
+		img{
+			display: block;
+			object-fit: cover;
+		}
+	}
+	&__content{
+		flex: 1 0;
+		max-width: 494px;
+		margin: 0 auto;
+	}
+	&__name{
+		font-family: $font2;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #000000;
+		margin: 0 0 44px;
+	}
+	&__dif{
+		width: 139px;
+		height: 1px;
+		background-color: #000;
+		margin: 80px 0;
+	}
+	&__text{
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.05em;
+		text-transform: lowercase;
+		color: #000000;
+		margin: 0 0 19px;
+		&.hide{
+			display: none;
+		}
+	}
+	&__link{
+		font-family: $font2;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+		letter-spacing: 0.05em;
+		text-decoration-line: underline;
+		text-transform: uppercase;
+		color: #000000;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	&__marketplace{
+		flex: 1 0 100%;
+		display: flex;
+		gap: 58px;
+
+	}
+	.btn{
+		font-size: 18px;
+		line-height: 22px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+		width: 100%;
+		img{
+			vertical-align: middle;
+		}
+		&:hover{
+			background-color: transparent;
+			color: #000;
+		}
+	}
+	@include r(767){
+		&__body{
+			display: block;
+			padding-bottom: 42px;
+			margin-bottom: 35px;
+		}
+		&__figure{
+			flex: 1 0 100%;
+			max-width: 100%;
+			margin: 0 0 36px;
+			img{
+				width: 100%;
+			}
+		}
+		&__content{
+			flex: 1 0 100%;
+			max-width: 100%;
+			margin: 0 auto;
+		}
+		&__name{
+			display: none;
+		}
+		&__ingredients{
+		}
+		&__text{
+			&.hide{
+				display: block;
+			}
+		}
+	}
+}
