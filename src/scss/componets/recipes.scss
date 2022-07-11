@@ -82,6 +82,9 @@
 		text-transform: lowercase;
 		color: #000000;
 		margin: 0 0 19px;
+		&.hide{
+			display: none;
+		}
 	}
 	&__link{
 		font-weight: 400;
@@ -128,10 +131,16 @@
 
 		}
 		&__ingredients{
-			display: none;
 		}
 		&__text{
-			display: none;
+			&.hide{
+				display: block;
+			}
+		}
+		&__link{
+			&--detail{
+				display: none;
+			}
 		}
 	}
 }

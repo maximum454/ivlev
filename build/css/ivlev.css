@@ -3253,6 +3253,10 @@ a {
   margin: 0 0 19px;
 }
 
+.recipes__text.hide {
+  display: none;
+}
+
 .recipes__link {
   font-weight: 400;
   font-size: 14px;
@@ -3707,11 +3711,11 @@ a {
     display: block;
   }
 
-  .recipes__ingredients {
-    display: none;
+  .recipes__text.hide {
+    display: block;
   }
 
-  .recipes__text {
+  .recipes__link--detail {
     display: none;
   }
 }

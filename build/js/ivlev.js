@@ -1434,4 +1434,16 @@ burger.addEventListener('click', function (e){
 
 $(function (){
     $('.js-phone-mask').mask('+7 (000) 000-00-00');
+
+
+    $('.js-recipes-link').on('click', function (){
+        if ($(this).text() === "свернуть") {
+            $(this).text('Развернуть');
+        } else {
+            $(this).text('свернуть');
+        }
+        $('.recipes__text').toggleClass('hide');
+        return false;
+    })
 })
+
