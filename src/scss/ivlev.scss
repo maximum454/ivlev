@@ -15,9 +15,9 @@
 
 body {
 	background-color: #fff;
-	background-image: url("../img/bg.png");
+	background-image: url("../img/bg.jpg");
 	background-position: top;
-	background-repeat: repeat-y;
+	background-repeat: repeat;
 	background-size: 100%;
 	&.lock {
 		overflow: hidden;

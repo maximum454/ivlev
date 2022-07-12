@@ -2473,9 +2473,9 @@ html.remodal-is-locked {
 
 body {
   background-color: #fff;
-  background-image: url("../img/bg.png");
+  background-image: url("../img/bg.jpg");
   background-position: top;
-  background-repeat: repeat-y;
+  background-repeat: repeat;
   background-size: 100%;
 }
 
@@ -3066,9 +3066,14 @@ a {
 .slider-products--other .slider-products__title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.slider-products--other .slider-products__title.small {
   font-size: 15px;
   line-height: 30px;
-  color: #000000;
 }
 
 .slider-products--other .container {

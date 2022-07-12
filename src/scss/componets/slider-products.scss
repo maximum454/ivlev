@@ -9,9 +9,13 @@
 		.slider-products__title{
 			font-family: $font2;
 			font-weight: 700;
-			font-size: 15px;
-			line-height: 30px;
+			font-size: 20px;
+			line-height: 24px;
 			color: #000000;
+			&.small{
+				font-size: 15px;
+				line-height: 30px;
+			}
 		}
 		.container{
 			padding: 0;
