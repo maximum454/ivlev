@@ -3916,14 +3916,6 @@ a {
     display: block;
   }
 
-  .recipes__text.hide {
-    display: block;
-  }
-
-  .recipes__link--detail {
-    display: none;
-  }
-
   .catalog-detail__body {
     display: block;
     margin-bottom: 35px;
